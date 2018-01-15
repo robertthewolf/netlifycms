@@ -8,7 +8,7 @@ export default ({ children }) => (
     <header>
     <nav>
     <Link to={`/`}>
-        Pandas Eating Lots
+        <img src="" alt="JNJ logo" />
     </Link>
     <ul>
       <li>

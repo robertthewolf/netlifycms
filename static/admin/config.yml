@@ -10,48 +10,66 @@ collections:
     folder: "src/pages/mirror"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "mirror"}
       - {label: "Název", name: "nazev", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cena v CZK", name: "cena", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "number"}
 
-  - name: "mirror"
-    label: "Zrcadlo"
-    folder: "src/pages/mirror"
+  - name: "photography"
+    label: "Fotka"
+    folder: "src/pages/photography"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "photography"}
       - {label: "Název", name: "nazev", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Cena v CZK", name: "cena", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "number"}
 
-  - name: "mirror"
-    label: "Zrcadlo"
-    folder: "src/pages/mirror"
+  - name: "jewellery"
+    label: "Šprek"
+    folder: "src/pages/jewellery"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "jewellery"}
       - {label: "Název", name: "nazev", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Popis", name: "popis", widget: "text"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Cena v CZK", name: "cena", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "number"}
 
-  - name: "pages"
-    label: "Stránky"
+  - name: "glass"
+    label: "Sklo"
+    folder: "src/pages/glass"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "glass"}
+      - {label: "Název", name: "nazev", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cena v CZK", name: "cena", widget: "number"}
+
+  - name: "content"
+    label: "Obecně"
     files:
-      - file: "src/pages/about.md"
+      - file: "src/content/about.md"
         label: "O nás"
         name: "about"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Popis", name: "popis", widget: "markdown"}
           - {label: "Description", name: "description", widget: "markdown"}
+
+      - file: "src/content/contact.md"
+        label: "Kontakt"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact"}
           - {label: "Kontaktní email", name: "mail", widget: "string"}
+          - {label: "Telefoní číslo", name: "phone", widget: "string"}
+          - {label: "Facebook", name: "facebook", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
+
+      - file: "src/content/order.md"
+        label: "Objednávka"
+        name: "order"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "order"}
+          - {label: "Informace česky", name: "mail", widget: "text"}
+          - {label: "English instrucitons", name: "facebook", widget: "text"}
