@@ -5,11 +5,57 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: "mirror"
+    label: "Zrcadlo"
+    folder: "src/pages/mirror"
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Název", name: "nazev", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Popis", name: "popis", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "text"}
+      
+  - name: "mirror"
+    label: "Zrcadlo"
+    folder: "src/pages/mirror"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Název", name: "nazev", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Popis", name: "popis", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "text"}
+
+  - name: "mirror"
+    label: "Zrcadlo"
+    folder: "src/pages/mirror"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Název", name: "nazev", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Popis", name: "popis", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Cena v CZK", name: "cena", widget: "text"}
+
+  - name: "pages"
+    label: "Stránky"
+    files:
+      - file: "src/pages/about.md"
+        label: "O nás"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+          - {label: "Popis", name: "popis", widget: "markdown"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Kontaktní email", name: "mail", widget: "string"}
