@@ -15,10 +15,8 @@ collections:
       - {label: "Název", name: "nazev", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Popis", name: "popis", widget: "text"}
-      - {label: "Description", name: "description", widget: "text"}
       - {label: "Cena v CZK", name: "cena", widget: "text"}
-      
+
   - name: "mirror"
     label: "Zrcadlo"
     folder: "src/pages/mirror"
@@ -29,8 +27,6 @@ collections:
       - {label: "Název", name: "nazev", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Popis", name: "popis", widget: "text"}
-      - {label: "Description", name: "description", widget: "text"}
       - {label: "Cena v CZK", name: "cena", widget: "text"}
 
   - name: "mirror"
