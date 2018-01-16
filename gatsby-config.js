@@ -4,7 +4,12 @@ module.exports = {
 },
   plugins: [
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-typography`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,5 +17,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    `gatsby-transformer-remark`,
   ],
 }
